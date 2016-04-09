@@ -1,0 +1,85 @@
+<html lang="pt-br"> 
+<head>
+	<meta charset="UTF-8">
+    <title>PSEUDO-CLASSES ESTRUTURAIS</title>  
+    <style>
+
+    /* Captura o primeiro filho do elemento pai */
+	p:first-child {
+		color: blue;
+	}
+
+	p:last-child {
+		color: red;
+	}
+
+	/* Captura o primeiro filho do mesmo tipo do elemento */
+	li:first-of-type {
+		color: green;
+	}
+
+	li:last-of-type {
+		color: orange;
+	}
+
+	/* Escolhendo filhos em uma herença
+	   Podemos trabalhar com números, com palavras-chave e fórmulas 
+	   Ex: 1, 2n+0, 2, 3n-1, odd e even;
+	*/
+
+	li:nth-child(1) {
+		color: red;
+		background: blue;
+	}
+
+	li:nth-last-child(2) {
+		color: green;
+		background: red;
+	}	
+
+
+	li:nth-last-child(3) {
+		color: green;
+		background: red;
+	}	
+
+	div > p:nth-of-type(2) {
+		color: green;
+		padding: 1em;
+	}	
+
+	div > p:nth-last-of-type(2) {
+		color: orange;
+		padding: 1em;
+	}	
+
+	</style>
+</head>
+<body>
+
+	<article>
+		<p>Conteúdo aqui... Primeiro filho.</p>
+		<p>Conteúdo aqui...</p>
+		<p>Conteúdo aqui...</p>
+	</article>
+
+	<ol>
+		<li href="#">link</li>
+		<li href="#">link</li>
+		<li href="#">link</li>
+		<li href="#">link</li>
+	</ol>
+
+	<div>
+		<p>Conteúdo aqui...</p>
+		<p>Conteúdo aqui...</p>
+	</div>
+
+	<div>
+		<p>Conteúdo aqui...</p>
+		<p>Conteúdo aqui...</p>
+	</div>
+
+</body>
+</html>
+
